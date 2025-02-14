@@ -1,4 +1,4 @@
-# bike-sharing_analysis
+# Bike-Sharing-Data-Insights
 This project has been developed using python for the backend, sql for the database and power bi as a platform for the frontend. 
 The data is coming from https://citybik.es/, a repository of all the bike-sharing sevices around the world.
 Using the python scripts we can get real-time data and store it to the database we can generate with the .sql files.
