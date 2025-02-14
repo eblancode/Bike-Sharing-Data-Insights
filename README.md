@@ -87,11 +87,9 @@ This folder contains the source code for data extraction, transformation, and da
 
 Python scripts that handle interactions with the CityBik.es API and subsequent data processing.
 
-- **tempo.py:**Executes the function `escriu_a_mysql()` to store each snapshot of the API data into the database, ensuring only new information is added.
-- **station_info.py:**Extracts static information about each station (e.g., address, coordinates) and saves it as a `.csv` file for SQL import.
-- **nearby_info.py:**Generates a `.csv` file that lists nearby stations and their relationships.
-- **ReadMe.md:**
-  Documentation about the Python scripts and their functionality.
+- **tempo.py:** Executes the function `escriu_a_mysql()` to store each snapshot of the API data into the database, ensuring only new information is added.
+- **station_info.py:** Extracts static information about each station (e.g., address, coordinates) and saves it as a `.csv` file for SQL import.
+- **nearby_info.py:** Generates a `.csv` file that lists nearby stations and their relationships.
 
 #### 🗂️ /sql
 
@@ -103,13 +101,12 @@ SQL scripts to manage the database structure and perform data analysis.
 
 The database is normalized and structured to handle historical and real-time bike-sharing data efficiently. The key tables include:
 
-- **json_data:**Stores raw data retrieved from the CityBik.es API, representing data from December 17 to 22, 2017.
-- **temp_info:**Contains processed data reflecting time-based changes, specifically from December 21 and 22, 2017.
-- **station_info:**Includes static details such as station names, addresses, and coordinates.
-- **nearby_stations:**Captures relationships between nearby stations, using the relationship as a primary key.
-- **barris:**Links stations to their respective neighborhoods for location-based analysis.
-- **cities:**
-  A reference table storing information about other bike-sharing services worldwide.
+- **json_data:** Stores raw data retrieved from the CityBik.es API, representing data from December 17 to 22, 2017.
+- **temp_info:** Contains processed data reflecting time-based changes, specifically from December 21 and 22, 2017.
+- **station_info:** Includes static details such as station names, addresses, and coordinates.
+- **nearby_stations:** Captures relationships between nearby stations, using the relationship as a primary key.
+- **barris:** Links stations to their respective neighborhoods for location-based analysis.
+- **cities:** A reference table storing information about other bike-sharing services worldwide.
 
 ---
 
@@ -117,10 +114,9 @@ The database is normalized and structured to handle historical and real-time bik
 
 The Python scripts play a crucial role in collecting, processing, and storing the data:
 
-- **tempo.py:**Collects time-based availability data and stores it in the MySQL database after ensuring that the data has changed since the last update.
-- **station_info.py:**Extracts and stores static information about bike stations in a `.csv` format.
-- **nearby_info.py:**
-  Analyzes station proximity and generates a `.csv` file containing these relationships.
+- **tempo.py:** Collects time-based availability data and stores it in the MySQL database after ensuring that the data has changed since the last update.
+- **station_info.py:** Extracts and stores static information about bike stations in a `.csv` format.
+- **nearby_info.py:** Analyzes station proximity and generates a `.csv` file containing these relationships.
 
 These scripts collectively ensure that both static and dynamic data are accurately captured and processed for analysis.
 
